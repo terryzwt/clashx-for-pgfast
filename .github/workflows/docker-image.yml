@@ -3,6 +3,14 @@ name: Docker Image CI
 on:
   push:
     branches: [ master, main ]
+  schedule:
+    - cron:  '30 2 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Mannual build'
+        required: true
+        default: 'Why??'
 jobs:
   build:
     runs-on: ubuntu-latest
