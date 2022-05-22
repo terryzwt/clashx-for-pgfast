@@ -1,0 +1,7 @@
+#!/command/with-contenv bash
+
+PROCESS_NAME="clashx"
+cd /root/subconverter
+./subconverter -g 
+echo "Starting clashx"
+clash -d /root/.config/clash -f /root/.config/clash/pgfast.yml

@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv bash
+gotpl /etc/gotpl/subconverter-generate.ini > /root/subconverter/generate.ini
